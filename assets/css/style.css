@@ -1,10 +1,8 @@
 /* CSS Styles for Web Page*/
 
 :root {
-    --light-blue: #00A1AB;
-    --dark-blue: #00263B;
-    --dark-red: #6F0000;
-    --orange: #FF5200;
+    --purple: #7510F7;
+    --black: #0a0a0a;
 }
 
 * {
@@ -15,15 +13,14 @@
 
 /* apply styles to the body */
 body {
-    color: var(--orange);
-    background-color: var(--dark-blue);
+    color: black;
     font-family: Helvetica, Arial, sans-serif;
 }
 
 /* apply styles to the header */
 header {
     padding: 20px 35px;
-    background-color: var(--orange);
+    background-color: white;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -39,13 +36,13 @@ header {
 header h1 {
     font-weight: bold;
     font-size: 36px;
-    color: var(--dark-blue);
+    color: var(--purple);
     margin: 0;
 }
 
-header a {
+header h1 a {
     text-decoration: none;
-    color: var(--dark-blue);
+    color: var(--purple);
 }
 
 header nav {
@@ -64,20 +61,83 @@ header nav ul li a {
     padding: 10px 15px;
     font-weight: bold;
     font-size: 1.5vw;
+    text-decoration: none;
+    color: black;
 }
 
 header nav ul li a:hover {
-    background: var(--primary-color);
-    color: var(--secondary-color);
+    background: var(--purple);
+    color: white;
     border-radius: 15px;
     text-shadow: none;
 }
 
+/* apply styles to the hero */
 
+.hero {
+    margin: 100px 0 200px 0;
+    background-image: url(../images/Hero-Image.jpg);
+}
+
+.hero-text {
+    text-align: center;
+    line-height: 3.5rem;
+}
+
+.hero-text h2 {
+    font-size: 38px;
+}
+
+.hero-text h3 {
+    font-size: 18px;
+    font-weight: lighter;
+}
+
+/* apply styles to about section */
+
+.about {
+    width: 100%;
+    padding: 50px 0 50px 15px;
+    text-align: left;
+    background-color: var(--purple);
+    color: white;
+}
+
+.about h2 {
+    text-transform: uppercase;
+}
+
+/* apply styles to my-work section */
+
+.my-work {
+    width: 100%;
+    padding: 50px 0 50px 15px;
+    text-align: left;
+    background-color: white;
+    color: black;
+}
+
+.my-work h2 {
+    text-transform: uppercase;
+}
+
+/* apply styles to contact section */
+
+.contact {
+    width: 100%;
+    padding: 50px 0 50px 15px;
+    text-align: left;
+    background-color: var(--purple);
+    color: white;
+}
+
+.contact h2 {
+    text-transform: uppercase;
+}
 
 /* apply styles to the footer */
 footer {
-    background: var(--orange);
+    background: white;
     width: 100%;
     padding: 40px 35px;
     display: flex;
@@ -86,7 +146,7 @@ footer {
 }
 
 footer h2 {
-    color: var(--dark-blue);
+    color: var(--purple);
     font-size: 30px;
     margin: 0;
 }
@@ -97,4 +157,5 @@ footer div {
 
 footer a {
     text-decoration: none;
+    color: black;
 }
