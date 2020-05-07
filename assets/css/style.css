@@ -1,0 +1,100 @@
+/* CSS Styles for Web Page*/
+
+:root {
+    --light-blue: #00A1AB;
+    --dark-blue: #00263B;
+    --dark-red: #6F0000;
+    --orange: #FF5200;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* apply styles to the body */
+body {
+    color: var(--orange);
+    background-color: var(--dark-blue);
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+/* apply styles to the header */
+header {
+    padding: 20px 35px;
+    background-color: var(--orange);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    background-size: cover;
+    background-position: 80%;
+    background-attachment: fixed;
+    z-index: 9999;
+}
+
+header h1 {
+    font-weight: bold;
+    font-size: 36px;
+    color: var(--dark-blue);
+    margin: 0;
+}
+
+header a {
+    text-decoration: none;
+    color: var(--dark-blue);
+}
+
+header nav {
+    margin: 7px 0;
+}
+
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+header nav ul li a {
+    padding: 10px 15px;
+    font-weight: bold;
+    font-size: 1.5vw;
+}
+
+header nav ul li a:hover {
+    background: var(--primary-color);
+    color: var(--secondary-color);
+    border-radius: 15px;
+    text-shadow: none;
+}
+
+
+
+/* apply styles to the footer */
+footer {
+    background: var(--orange);
+    width: 100%;
+    padding: 40px 35px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+footer h2 {
+    color: var(--dark-blue);
+    font-size: 30px;
+    margin: 0;
+}
+
+footer div {
+    text-align: right;
+}
+
+footer a {
+    text-decoration: none;
+}
