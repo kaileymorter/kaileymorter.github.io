@@ -58,7 +58,8 @@ header nav ul {
 }
 
 header nav ul li a {
-    padding: 10px 15px;
+    padding: 10px 30px;
+    margin-right: 10px;
     font-weight: bold;
     font-size: 1.5vw;
     text-decoration: none;
@@ -105,26 +106,35 @@ header nav ul li a:hover {
     background-color: var(--purple);
     color: white;
     width: 100%;
-}
-
-.about-body {
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-}
-
-.about h3, .about img {
-    padding: 50px;
+    flex-wrap: wrap;
 }
 
 .about h2 {
     text-transform: uppercase;
+    padding-top: 35px;
+    padding-left: 50px;
+    font-size: 36px;
 }
 
-.step-img {
-    flex: 1 12%;
-    margin-right: 20px;
+.about h3 {
+    padding-left: 50px;
+}
+
+.about-body {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+}
+
+.about-img  {
+    max-width: 200px;
+    height: auto;
+    border: 2px solid white;
+}
+
 
 /* apply styles to my-work section */
 
