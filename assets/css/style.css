@@ -13,7 +13,6 @@
 
 /* apply styles to the body */
 body {
-    color: black;
     font-family: Helvetica, Arial, sans-serif;
 }
 
@@ -183,7 +182,7 @@ header nav ul li a:hover {
 
 .my-work-item:hover a {
     color: white;
-    transform: scale(1.5);
+    transform: scale(1.2);
     transition: transform .5s;
     overflow-wrap: break-word;
 }
@@ -195,20 +194,18 @@ header nav ul li a:hover {
 
 .item-1 {
     grid-row: 1 / span 10;
+    grid-column: 1 / span 2;
 }
 
 .item-2 {
-    grid-row: 11 / span 14;
+    grid-row: 1 / span 10;
+    grid-column: 3 / span 1;
 }
 
-.item-3, .item-4 {
-    grid-row: span 14;
+.item-3, .item-4, .item-5 {
+    grid-row: 11 /span 11;
 }
 
-.item-5 {
-    grid-column: 2 / span 2;
-    grid-row: 15 / span 10;
-}
 
 /* apply styles to contact section */
 
@@ -233,17 +230,6 @@ header nav ul li a:hover {
 
 .contact-body > * {
     flex: 1;
-}
-
-.contact-header {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.contact-info address {
-    line-height: 2;
-    font-size: 18px;
-    font-style: normal;
 }
 
 .contact-info a {
@@ -350,19 +336,16 @@ footer h2 {
 
     .item-1 {
         grid-row: 1 / span 8;
+        grid-column: 1 / span 2;
     }
     
     .item-2 {
-        grid-row: 9 / span 10;
+        grid-row: 1 / span 8;
+        grid-column: 3 / span 1;
     }
     
-    .item-3, .item-4 {
-        grid-row: span 11;
-    }
-    
-    .item-5 {
-        grid-column: 2 / span 2;
-        grid-row: 12 / span 7;
+    .item-3, .item-4, .item-5 {
+        grid-row: 9 /span 8;
     }
 
 }
@@ -421,28 +404,28 @@ footer h2 {
     }
 
     .item-1 {
-        grid-row: 1 / span 4;
-        grid-column: 1 / span 1;
+        grid-row: 1 / span 5;
+        grid-column: 1 / span 2;
     }
-
+    
     .item-2 {
-        grid-row: 5 / span 6;
+        grid-row: 6 / span 5;
         grid-column: 1 / span 1;
     }
     
     .item-3 {
-        grid-row: 1 / span 6;
+        grid-row: 6 /span 5;
         grid-column: 2 / span 1;
     }
 
     .item-4 {
-        grid-row: 7 / span 4;
-        grid-column: 2 / span 1;
+        grid-row: 11 /span 5;
+        grid-column: 1/ span 1
     }
 
     .item-5 {
-        grid-row: 11 / span 4;
-        grid-column: 1 / span 2;
+        grid-row: 11 /span 5;
+        grid-column: 2 /span 1;
     }
 
     .footer h2 {
@@ -456,11 +439,6 @@ footer h2 {
         padding: 20px;
     }
 
-    header nav{
-        display: flex;
-        flex-wrap: wrap;
-    }
-
     header nav ul li {
         padding: 0px;
         margin: 10px 1;
@@ -468,13 +446,6 @@ footer h2 {
 
     header nav ul li a {
         padding: 10px;
-    }
-
-    header nav ul li a:hover {
-        background: var(--purple);
-        color: white;
-        border-radius: 5px;
-        text-shadow: none;
     }
 
     .hero {
@@ -485,6 +456,15 @@ footer h2 {
         flex-wrap: wrap-reverse;
         justify-content: center;
         align-items: center;
+    }
+
+    .about-text {
+        justify-content: center;
+        text-align: center;
+    }
+
+    .my-work h2 {
+        text-align: center;
     }
 
     .my-work-grid {
@@ -514,13 +494,33 @@ footer h2 {
 
     .item-5 {
         grid-row: 9 / span 2;
+        grid-column: 1 / span 2;
     }
 
     .contact-body > * {
         flex: 0 100%;
     }
 
+    .contact-body h2{
+        text-align: center;
+    }
+
     .footer {
         align-items: center;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    header nav ul li {
+        margin-bottom: 20px;
+    }
+
+    .hero {
+        margin-top: 80px;
+        padding-bottom: 200px;
+    }
+
+    .footer {
+        justify-content: center;
     }
 }
