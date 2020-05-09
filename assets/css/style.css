@@ -75,6 +75,9 @@ header nav ul li a:hover {
     background-size: 900px, contain;
     background-repeat: no-repeat;
     padding-bottom: 250px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .hero-text {
@@ -99,9 +102,6 @@ header nav ul li a:hover {
     text-align: left;
     background-color: var(--purple);
     color: white;
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
 }
 
 .about-body {
@@ -136,8 +136,7 @@ header nav ul li a:hover {
 /* apply styles to my-work section */
 
 .my-work {
-    width: 100%;
-    padding: 100px 100px;
+    padding: 100px;
     text-align: left;
     background-color: white;
     color: black;
@@ -214,7 +213,6 @@ header nav ul li a:hover {
 /* apply styles to contact section */
 
 .contact {
-    width: 100%;
     padding: 100px 100px;
     text-align: left;
     background-color: var(--purple);
@@ -291,10 +289,10 @@ header nav ul li a:hover {
 /* apply styles to the footer */
 footer {
     background: white;
-    width: 100%;
     padding: 30px 40px;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     align-items: center;
 }
 
@@ -523,7 +521,6 @@ footer h2 {
     }
 
     .footer {
-        display: inline-block;
-        text-align: center;
+        align-items: center;
     }
 }
