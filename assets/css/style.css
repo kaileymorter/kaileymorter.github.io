@@ -134,7 +134,7 @@ header nav ul li a:hover {
 .about-img  {
     max-width: 200px;
     height: auto;
-    border: 2px solid white;
+    border: 5px solid white;
     order: 1;
     border-radius: 50%;
 }
@@ -166,44 +166,53 @@ header nav ul li a:hover {
 
 .my-work-item {
     display: flex;
-    border: 3px solid var(--purple) ;
-    background-size: cover;
-    background-position: top left;
-    font-size: 32px;
-    color: white;
-    font-weight: bold;
-    align-items: center;
+    flex-wrap: wrap;
     justify-content: center;
+    align-content: center;
+    border: 5px solid var(--purple) ;
+    font-size: 32px;
+    font-weight: bold;
+    border-radius: 1%;
+    text-transform: uppercase;
+    padding: 20px;
+    text-align: center;
+}
+
+.my-work-item a {
+    text-decoration: none;
+    color: var(--purple);
 }
 
 .my-work-item:hover {
+    background-color: var(--purple);
+}
 
+.my-work-item:hover a {
+    color: white;
+    transform: scale(1.5);
+    transition: transform .2s;
 }
 
 .item-1 {
     grid-row: 1 / span 10;
-    background-image: url(../images/run-buddy.jpg);
 }
 
 .item-2 {
     grid-row: 11 / span 14;
-    background-image: url(../images/speal-programming.png);
 }
 
-.item-3 {
+.item-3, .item-4 {
     grid-row: span 14;
-    background-image: url(../images/grunt-work.png);
-}
-
-.item-4 {
-    grid-row: span 14;
-    background-image: url(../images/cfpc.png);
 }
 
 .item-5 {
     grid-column: 2 / span 2;
     grid-row: 15 / span 10;
-    background-image: url(../images/myportfolio.png);
+}
+
+.work-img {
+    width: 50%;
+    height: auto;
 }
 
 /* apply styles to contact section */
